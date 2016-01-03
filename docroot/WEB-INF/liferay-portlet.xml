@@ -5,34 +5,34 @@
 	<portlet>
 		<portlet-name>fms-app</portlet-name>
 		<icon>/icon.png</icon>
-		<header-portlet-css>/css/main.css</header-portlet-css>
-		<footer-portlet-javascript>/js/main.js</footer-portlet-javascript>
+		<header-portlet-css>/css/app.css</header-portlet-css>
+		<footer-portlet-javascript>/js/app.js</footer-portlet-javascript>
 		<css-class-wrapper>fms-app-portlet</css-class-wrapper>
 	</portlet>
 	<portlet>
 		<portlet-name>fms-home</portlet-name>
 		<icon>/icon.png</icon>
-		<header-portlet-css>/css/main.css</header-portlet-css>
+		<header-portlet-css>/css/home.css</header-portlet-css>
 		<footer-portlet-javascript>
-			/js/main.js
+			/js/home.js
 		</footer-portlet-javascript>
 		<css-class-wrapper>fms-home-portlet</css-class-wrapper>
 	</portlet>
 	<portlet>
 		<portlet-name>fms-dashboard-map</portlet-name>
 		<icon>/icon.png</icon>
-		<header-portlet-css>/css/main.css</header-portlet-css>
+		<header-portlet-css>/css/dashboard.css</header-portlet-css>
 		<footer-portlet-javascript>
-			/js/main.js
+			/js/dashboard.js
 		</footer-portlet-javascript>
 		<css-class-wrapper>fms-dashboard-map-portlet</css-class-wrapper>
 	</portlet>
 	<portlet>
 		<portlet-name>fms-dashboard-search-building</portlet-name>
 		<icon>/icon.png</icon>
-		<header-portlet-css>/css/main.css</header-portlet-css>
+		<header-portlet-css>/css/dashboard-searchbuilding.css</header-portlet-css>
 		<footer-portlet-javascript>
-			/js/main.js
+			/js/dashboard-searchbuilding.js
 		</footer-portlet-javascript>
 		<css-class-wrapper>
 			fms-dashboard-search-building-portlet

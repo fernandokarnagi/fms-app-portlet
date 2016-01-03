@@ -2,4 +2,4 @@
 
 <portlet:defineObjects />
 
-This is the <b>FMS Dashboard Search Building</b> portlet in View mode.
+<div id="myDataTable"></div>
