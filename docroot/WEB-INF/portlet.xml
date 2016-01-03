@@ -14,9 +14,9 @@
 			<mime-type>text/html</mime-type>
 		</supports>
 		<portlet-info>
-			<title>Fms App</title>
-			<short-title>Fms App</short-title>
-			<keywords>Fms App</keywords>
+			<title>FMS App</title>
+			<short-title>FMS App</short-title>
+			<keywords>FMS App</keywords>
 		</portlet-info>
 		<security-role-ref>
 			<role-name>administrator</role-name>
@@ -48,7 +48,7 @@
 		</supports>
 		<portlet-info>
 			<title>FMS Home</title>
-			<short-title>Fms Home</short-title>
+			<short-title>FMS Home</short-title>
 			<keywords></keywords>
 		</portlet-info>
 		<security-role-ref>

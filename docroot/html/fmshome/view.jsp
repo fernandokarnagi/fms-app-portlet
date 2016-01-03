@@ -2,4 +2,39 @@
 
 <portlet:defineObjects />
 
-This is the <b>FMS Home</b> portlet in View mode.
+<div style="width:100%; margin:0 auto;">
+	<div style="width:50%; margin:0 auto;">
+		<span class="fms-homebutton" onclick="location.href='/dashboard'">Dashboard</span>
+	</div>
+	<br/>
+</div>
+
+<div style="width:100%; margin:0 auto;">
+	<div style="width:50%; margin:0 auto;">
+	<span class="fms-homebutton" onclick="location.href='/preventive-maintenance'">Preventive Maintenance</span>
+	</div>
+	<br/>
+</div>
+
+
+<div style="width:100%; margin:0 auto;">
+	<div style="width:50%; margin:0 auto;">
+	<span class="fms-homebutton" onclick="location.href='/corrective-maintenance'">Corrective Maintenance</span>
+	</div>
+	<br/>
+</div>
+
+<div style="width:100%; margin:0 auto;">
+	<div style="width:50%; margin:0 auto;">
+	<span class="fms-homebutton" onclick="location.href='/administration'">Administration</span>
+	</div>
+	<br/>
+</div>
+
+
+<div style="width:100%; margin:0 auto;">
+	<div style="width:50%; margin:0 auto;">
+	<span class="fms-homebutton" onclick="location.href='/attendance'">Attendance</span>
+	</div>
+	<br/>
+</div>
