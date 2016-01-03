@@ -18,6 +18,15 @@
 		</footer-portlet-javascript>
 		<css-class-wrapper>fms-home-portlet</css-class-wrapper>
 	</portlet>
+	<portlet>
+		<portlet-name>fms-dashboard-map</portlet-name>
+		<icon>/icon.png</icon>
+		<header-portlet-css>/css/main.css</header-portlet-css>
+		<footer-portlet-javascript>
+			/js/main.js
+		</footer-portlet-javascript>
+		<css-class-wrapper>fms-dashboard-map-portlet</css-class-wrapper>
+	</portlet>
 	<role-mapper>
 		<role-name>administrator</role-name>
 		<role-link>Administrator</role-link>
