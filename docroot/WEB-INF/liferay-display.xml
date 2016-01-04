@@ -11,5 +11,6 @@
 		<portlet id="fms-attendance-chart"></portlet>
 		<portlet id="fms-building-pm-chart"></portlet>
 		<portlet id="fms-supermarket-pm-chart"></portlet>
+		<portlet id="fms-preventive-maintenance"></portlet>
 	</category>
 </display>
