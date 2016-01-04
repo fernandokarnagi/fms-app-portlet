@@ -27,8 +27,8 @@ YUI().use('aui-button', 'node', function(Y) {
 		      '<p>One Marina Boulevard, sometimes called NTUC Centre, is a 32-storey, 110 m skyscraper at 1 Marina Boulevard, in the zone of Raffles Place and Marina Bay, in the central business district of Singapore</p>'+
 		     
 		      '<a href="/attendance">View Attendance Summary</a><br/>' +
-		      '<a href="">View Preventive Maintenance Summary</a><br/>' +
-		      '<a href="">View Corrective Maintenance Summary</a><br/>' +
+		      '<a href="/building-preventive-maintenance">View Preventive Maintenance Summary</a><br/>' +
+		      '<a href="#">View Corrective Maintenance Summary</a><br/>' +
 		      '</div>'+
 		      '</div>';
   
@@ -54,8 +54,8 @@ YUI().use('aui-button', 'node', function(Y) {
 		      '<p>One Raffles Place, formerly Overseas Union Bank Centre or OUB Centre is one of the three tallest skyscrapers in the city of Singapore, sharing the title with the UOB Plaza and Republic Plaza</p>'+
 		     
 		      '<a href="/attendance">View Attendance Summary</a><br/>' +
-		      '<a href="">View Preventive Maintenance Summary</a><br/>' +
-		      '<a href="">View Corrective Maintenance Summary</a><br/>' +
+		      '<a href="/building-preventive-maintenance">View Preventive Maintenance Summary</a><br/>' +
+		      '<a href="#">View Corrective Maintenance Summary</a><br/>' +
 		      '</div>'+
 		      '</div>';
 
@@ -84,8 +84,8 @@ YUI().use('aui-button', 'node', function(Y) {
 		      '<p>NTUC FairPrice Co-Operative is a supermarket chain based in Singapore and the largest in the country. The company is a co-operative of the National Trades Union Congress or NTUC</p>'+
 		     
 		      '<a href="/attendance">View Attendance Summary</a><br/>' +
-		      '<a href="">View Preventive Maintenance Summary</a><br/>' +
-		      '<a href="">View Corrective Maintenance Summary</a><br/>' +
+		      '<a href="/supermarket-preventive-maintenance">View Preventive Maintenance Summary</a><br/>' +
+		      '<a href="#">View Corrective Maintenance Summary</a><br/>' +
 		      '</div>'+
 		      '</div>';
 
