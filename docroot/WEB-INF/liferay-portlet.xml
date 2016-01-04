@@ -81,10 +81,10 @@
 		<portlet-name>fms-supermarket-pm-chart</portlet-name>
 		<icon>/icon.png</icon>
 		<header-portlet-css>
-			/css/supermarket-fm-chart.css
+			/css/supermarket-pm-chart.css
 		</header-portlet-css>
 		<footer-portlet-javascript>
-			/js/supermarket-fm-chart.js
+			/js/supermarket-pm-chart.js
 		</footer-portlet-javascript>
 		<css-class-wrapper>
 			fms-supermarket-pm-chart-portlet
