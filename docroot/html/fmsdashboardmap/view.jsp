@@ -10,7 +10,6 @@
     
 <div id="map"></div>
 <script>
-
 var map;
 function initMap() {
 console.log("initmap");

@@ -4,22 +4,24 @@
 
 <form>
   <fieldset>
-    <legend>Building</legend>
+    <legend>Person</legend>
     <label>Name</label>
-    <input type="text" placeholder="building name ">
-    <span class="help-block">Please provide building name to search</span>
-    
-    <label>Type</label>
+    <input type="text" placeholder="resource name ">
+    <span class="help-block">Please provide resource name to search</span>
+   
+    <legend>Job</legend>
+    <label>Category</label>
     <label class="checkbox">
-      <input type="checkbox" id="fmsBuilding"> Building
+      <input type="checkbox">Cleaner
     </label>
-    <label class="checkbox">
-      <input type="checkbox" id="fmsSupermarket"> Supermarket
+     <label class="checkbox">
+      <input type="checkbox">Technician
     </label>
-    <span class="help-block">Please provide building owner to search</span>
+     <label class="checkbox">
+      <input type="checkbox">Repairman
+    </label>
     
-    <legend>Location</legend>
-    <label>Area</label>
+    <label>Assignment Area</label>
     <label class="checkbox">
       <input type="checkbox">North Singapore
     </label>
@@ -36,8 +38,6 @@
       <input type="checkbox">East Singapore
     </label>
     
-    
+    <button id="fmsSearchBtn">Search</button>
   </fieldset>
 </form>
-
-<button id="fmsSearchBtn">Search</button>

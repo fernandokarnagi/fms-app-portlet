@@ -7,5 +7,7 @@
 		<portlet id="fms-home"></portlet>
 		<portlet id="fms-dashboard-map"></portlet>
 		<portlet id="fms-dashboard-search-building"></portlet>
+		<portlet id="fms-dashboard-technician-search"></portlet>
+		<portlet id="fms-attendance-chart"></portlet>
 	</category>
 </display>

@@ -38,6 +38,32 @@
 			fms-dashboard-search-building-portlet
 		</css-class-wrapper>
 	</portlet>
+	<portlet>
+		<portlet-name>fms-dashboard-technician-search</portlet-name>
+		<icon>/icon.png</icon>
+		<header-portlet-css>
+			/css/technician-search.css
+		</header-portlet-css>
+		<footer-portlet-javascript>
+			/js/technician-search.js
+		</footer-portlet-javascript>
+		<css-class-wrapper>
+			fms-dashboard-technician-search-portlet
+		</css-class-wrapper>
+	</portlet>
+	<portlet>
+		<portlet-name>fms-attendance-chart</portlet-name>
+		<icon>/icon.png</icon>
+		<header-portlet-css>
+			/css/attendance-chart.css
+		</header-portlet-css>
+		<footer-portlet-javascript>
+			/js/attendance-chart.js
+		</footer-portlet-javascript>
+		<css-class-wrapper>
+			fms-attendance-chart-portlet
+		</css-class-wrapper>
+	</portlet>
 	<role-mapper>
 		<role-name>administrator</role-name>
 		<role-link>Administrator</role-link>
