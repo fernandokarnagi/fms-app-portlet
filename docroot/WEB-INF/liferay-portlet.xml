@@ -77,6 +77,19 @@
 			fms-building-pm-chart-portlet
 		</css-class-wrapper>
 	</portlet>
+	<portlet>
+		<portlet-name>fms-supermarket-pm-chart</portlet-name>
+		<icon>/icon.png</icon>
+		<header-portlet-css>
+			/css/supermarket-fm-chart.css
+		</header-portlet-css>
+		<footer-portlet-javascript>
+			/js/supermarket-fm-chart.js
+		</footer-portlet-javascript>
+		<css-class-wrapper>
+			fms-supermarket-pm-chart-portlet
+		</css-class-wrapper>
+	</portlet>
 	<role-mapper>
 		<role-name>administrator</role-name>
 		<role-link>Administrator</role-link>

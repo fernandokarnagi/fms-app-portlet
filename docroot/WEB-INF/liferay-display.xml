@@ -12,5 +12,6 @@
 	</category>
 	<category name="category.sample">
 		<portlet id="fms-building-pm-chart"></portlet>
+		<portlet id="fms-supermarket-pm-chart"></portlet>
 	</category>
 </display>
