@@ -10,4 +10,7 @@
 		<portlet id="fms-dashboard-technician-search"></portlet>
 		<portlet id="fms-attendance-chart"></portlet>
 	</category>
+	<category name="category.sample">
+		<portlet id="fms-building-pm-chart"></portlet>
+	</category>
 </display>
