@@ -103,6 +103,45 @@
 			fms-preventive-maintenance-portlet
 		</css-class-wrapper>
 	</portlet>
+	<portlet>
+		<portlet-name>fms-security-system-pm-chart</portlet-name>
+		<icon>/icon.png</icon>
+		<header-portlet-css>
+			/css/security-system-pm-chart.css
+		</header-portlet-css>
+		<footer-portlet-javascript>
+			/js/security-system-pm-chart.js
+		</footer-portlet-javascript>
+		<css-class-wrapper>
+			fms-security-system-pm-chart-portlet
+		</css-class-wrapper>
+	</portlet>
+	<portlet>
+		<portlet-name>fms-building-system-pm-chart</portlet-name>
+		<icon>/icon.png</icon>
+		<header-portlet-css>
+			/css/building-system-pm-chart.css
+		</header-portlet-css>
+		<footer-portlet-javascript>
+			/js/building-system-pm-chart.js
+		</footer-portlet-javascript>
+		<css-class-wrapper>
+			fms-building-system-pm-chart-portlet
+		</css-class-wrapper>
+	</portlet>
+	<portlet>
+		<portlet-name>fmsme-system-pm-chart</portlet-name>
+		<icon>/icon.png</icon>
+		<header-portlet-css>
+			/css/me-system-pm-chart.css
+		</header-portlet-css>
+		<footer-portlet-javascript>
+			/js/me-system-pm-chart.js
+		</footer-portlet-javascript>
+		<css-class-wrapper>
+			fmsme-system-pm-chart-portlet
+		</css-class-wrapper>
+	</portlet>
 	<role-mapper>
 		<role-name>administrator</role-name>
 		<role-link>Administrator</role-link>

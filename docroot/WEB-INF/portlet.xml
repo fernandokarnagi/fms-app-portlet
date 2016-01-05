@@ -295,4 +295,103 @@
 			<role-name>user</role-name>
 		</security-role-ref>
 	</portlet>
+	<portlet>
+		<portlet-name>fms-security-system-pm-chart</portlet-name>
+		<display-name>FMS Security System Pm Chart</display-name>
+		<portlet-class>
+			sg.com.ctcdemo.fms.portlet.FMSSecuritySystemPMChart
+		</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/fmssecuritysystempmchart/view.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>FMS Security System Pm Chart</title>
+			<short-title>Fms Security System Pm Chart</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	<portlet>
+		<portlet-name>fms-building-system-pm-chart</portlet-name>
+		<display-name>FMS Building System Pm Chart</display-name>
+		<portlet-class>
+			sg.com.ctcdemo.fms.portlet.FMSBuildingSystemPMChart
+		</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/fmsbuildingsystempmchart/view.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>FMS Building System Pm Chart</title>
+			<short-title>Fms Building System Pm Chart</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	<portlet>
+		<portlet-name>fmsme-system-pm-chart</portlet-name>
+		<display-name>FMS ME System Pm Chart</display-name>
+		<portlet-class>
+			sg.com.ctcdemo.fms.portlet.FMSMESystemPMChart
+		</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/fmsmesystempmchart/view.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>FMS ME System Pm Chart</title>
+			<short-title>Fmsme System Pm Chart</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
 </portlet-app>

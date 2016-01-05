@@ -52,9 +52,9 @@
 <hr/>
 
 
-<div id="fmsNotAttend" class="fms-pie-chart"><b>Not Attended</b><canvas id="fmsNotAttendChart" width="200px" height="200px"></canvas></div>
+<div id="fmsNotAttend" class="fms-pie-chart"><b>Not Present</b><canvas id="fmsNotAttendChart" width="200px" height="200px"></canvas></div>
 <div id="fmsLate" class="fms-pie-chart"><b>Late</b><canvas id="fmsLateChart" width="200px" height="200px"></canvas></div>
-<div id="fmsAttend" class="fms-pie-chart"><b>Attended</b><canvas id="fmsAttendChart" width="200px" height="200px"></canvas></div>
+<div id="fmsAttend" class="fms-pie-chart"><b>Present</b><canvas id="fmsAttendChart" width="200px" height="200px"></canvas></div>
 <div id="fmsTotal" class="fms-pie-chart"><b>Total</b><canvas id="fmsTotalChart" width="200px" height="200px"></canvas></div>
 
 <br class="fms-clearBoth" />
@@ -66,3 +66,7 @@
     <br class="fms-clearBoth" />
     
 <div id="attendanceTable" class="table table-bordered table-hover"></div>
+
+<div class="yui3-skin-sam">
+  <div id="attendanceSheet"></div>
+</div>

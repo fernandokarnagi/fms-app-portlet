@@ -51,10 +51,9 @@
 
 <hr/>
 
+<div id="fmsCompleted" class="fms-pie-chart"><b>On Schedule and Completed</b><canvas id="fmsCompletedChart" width="200px" height="200px"></canvas></div>
+<div id="fmsNotOnSchedule" class="fms-pie-chart"><b>Not On Schedule and Completed</b><canvas id="fmsNotOnScheduleChart" width="200px" height="200px"></canvas></div>
 <div id="fmsNotComplete" class="fms-pie-chart"><b>Not Completed</b><canvas id="fmsNotCompletedChart" width="200px" height="200px"></canvas></div>
-<div id="fmsNotOnSchedule" class="fms-pie-chart"><b>Not On Schedule</b><canvas id="fmsNotOnScheduleChart" width="200px" height="200px"></canvas></div>
-<div id="fmsOnSchedule" class="fms-pie-chart"><b>On Schedule</b><canvas id="fmsOnScheduleChart" width="200px" height="200px"></canvas></div>
-<div id="fmsCompleted" class="fms-pie-chart"><b>Completed</b><canvas id="fmsCompletedChart" width="200px" height="200px"></canvas></div>
 <div id="fmsTotal" class="fms-pie-chart"><b>Total</b><canvas id="fmsTotalChart" width="200px" height="200px"></canvas></div>
 
 <br class="fms-clearBoth" />

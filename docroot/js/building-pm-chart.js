@@ -2,10 +2,23 @@ YUI()
 		.use(
 				'aui-datatable',
 				function(Y) {
+					
+					function formatResourcesColumn(o) {
+						if (o.value == 'Security System') {
+							return "<a href='/security-system'>" + o.value + "</a>";
+						} else if (o.value == 'Building System') {
+							return "<a href='/building-system'>" + o.value + "</a>";
+						} else if (o.value == 'M&E') {
+							return "<a href='/m-e'>" + o.value + "</a>";
+						}
+				        return "-";
+				    }
+					
 					var columnSet = [ {
 						key : "0",
+						allowHTML : true,
 						label : "Resources",
-						formatter : '{value}'
+						formatter : formatResourcesColumn
 					} ];
 					for (var i = 1; i <= 31; i++) {
 						columnSet
@@ -156,31 +169,15 @@ var notOnScheduleData  = [
     }
 ]
 
-var onScheduleData  = [
-    {
-        value: 60,
-        color:"#0000ff",
-        highlight: "#0000dd",
-        label: "On Schedule"
-    },
-    {
-        value: 40,
-        color: "#dddddd",
-        highlight: "#aaaaaa",
-        label: "Others"
-    }
-]
-
-
 var completedData  = [
     {
-        value: 20,
+        value: 80,
         color:"#00ff00",
         highlight: "#00dd00",
         label: "Completed"
     },
     {
-        value: 80,
+        value: 20,
         color: "#dddddd",
         highlight: "#aaaaaa",
         label: "Others"
@@ -197,17 +194,12 @@ var totalData  = [
     value: 15,
     color:"#ff9900", 
     highlight: "#dddd00",
-    label: "Not On Schedule" 
+    label: "Not On Schedule & Completed" 
 },{
-    value: 60,
-    color:"#0000ff",
-    highlight: "#0000dd",
-    label: "On Schedule"
-},{
-    value: 20,
+    value: 80,
     color:"#00ff00",
     highlight: "#00dd00",
-    label: "Completed"
+    label: "On Schedule & Completed"
 }
 ]
 
@@ -245,9 +237,6 @@ new Chart(notCompletedCtx).Pie(notCompletedData,options);
 
 var notOnScheduleCtx = document.getElementById("fmsNotOnScheduleChart").getContext("2d");
 new Chart(notOnScheduleCtx).Pie(notOnScheduleData,options);
-
-var onScheduleCtx = document.getElementById("fmsOnScheduleChart").getContext("2d");
-new Chart(onScheduleCtx).Pie(onScheduleData,options);
 
 var completedCtx = document.getElementById("fmsCompletedChart").getContext("2d");
 new Chart(completedCtx).Pie(completedData,options);

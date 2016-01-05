@@ -2,4 +2,4 @@
 
 <portlet:defineObjects />
 
-TEST
+This is the <b>FMS Building System Pm Chart</b> portlet in View mode.
