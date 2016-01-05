@@ -2,4 +2,4 @@
 
 <portlet:defineObjects />
 
-TEST
+<div id="myScheduler"></div>

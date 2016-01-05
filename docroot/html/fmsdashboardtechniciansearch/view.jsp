@@ -38,6 +38,8 @@
       <input type="checkbox">East Singapore
     </label>
     
-    <button id="fmsSearchBtn">Search</button>
+    
   </fieldset>
 </form>
+
+<button id="fmsSearchBtn">Search</button>
