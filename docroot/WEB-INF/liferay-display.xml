@@ -16,6 +16,7 @@
 		<portlet id="fms-building-system-pm-chart"></portlet>
 		<portlet id="fmsme-system-pm-chart"></portlet>
 		<portlet id="fms-cleaning-performance-dashboard"></portlet>
+		<portlet id="fms-preventive-maintenance-search"></portlet>
 	</category>
 	<category name="category.sample">
 		

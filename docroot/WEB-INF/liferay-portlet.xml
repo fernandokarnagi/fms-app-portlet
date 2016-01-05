@@ -155,6 +155,19 @@
 			fms-cleaning-performance-dashboard-portlet
 		</css-class-wrapper>
 	</portlet>
+	<portlet>
+		<portlet-name>fms-preventive-maintenance-search</portlet-name>
+		<icon>/icon.png</icon>
+		<header-portlet-css>
+			/css/preventive-maintenance-search.css
+		</header-portlet-css>
+		<footer-portlet-javascript>
+			/js/preventive-maintenance-search.js
+		</footer-portlet-javascript>
+		<css-class-wrapper>
+			fms-preventive-maintenance-search-portlet
+		</css-class-wrapper>
+	</portlet>
 	<role-mapper>
 		<role-name>administrator</role-name>
 		<role-link>Administrator</role-link>

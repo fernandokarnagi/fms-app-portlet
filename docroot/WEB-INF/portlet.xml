@@ -431,4 +431,37 @@
 			<role-name>user</role-name>
 		</security-role-ref>
 	</portlet>
+	<portlet>
+		<portlet-name>fms-preventive-maintenance-search</portlet-name>
+		<display-name>FMS Preventive Maintenance Search</display-name>
+		<portlet-class>
+			sg.com.ctcdemo.fms.portlet.FMSPreventiveMaintenanceSearch
+		</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/fmspreventivemaintenancesearch/view.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>FMS Preventive Maintenance Search</title>
+			<short-title>Fms Preventive Maintenance Search</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
 </portlet-app>
