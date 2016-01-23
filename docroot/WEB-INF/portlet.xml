@@ -464,4 +464,157 @@
 			<role-name>user</role-name>
 		</security-role-ref>
 	</portlet>
+	<portlet>
+		<portlet-name>fms-case-query</portlet-name>
+		<display-name>FMS Case Query</display-name>
+		<portlet-class>
+			sg.com.ctcdemo.fms.portlet.FMSCaseQuery
+		</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/fmscasequery/view.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>FMS Case Query</title>
+			<short-title>Fms Case Query</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	<portlet>
+		<portlet-name>fms-case-create</portlet-name>
+		<display-name>FMS Case Create</display-name>
+		<portlet-class>
+			sg.com.ctcdemo.fms.portlet.FMSCaseCreate
+		</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/fmscasecreate/view.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>FMS Case Create</title>
+			<short-title>Fms Case Create</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	<portlet>
+		<portlet-name>fms-cm-chart</portlet-name>
+		<display-name>FMS CM Chart</display-name>
+		<portlet-class>
+			sg.com.ctcdemo.fms.portlet.FMSCMChart
+		</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/fmscmchart/view.jsp</value>
+		</init-param>
+		<init-param>
+			<name>edit-template</name>
+			<value>/html/fmscmchart/edit.jsp</value>
+		</init-param>
+		<init-param>
+			<name>config-template</name>
+			<value>/html/fmscmchart/config.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+            <portlet-mode>edit</portlet-mode>
+			<portlet-mode>config</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>FMS CM Chart</title>
+			<short-title>Fms Cm Chart</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	<portlet>
+		<portlet-name>fms-comparison-chart</portlet-name>
+		<display-name>FMS Comparison Chart</display-name>
+		<portlet-class>
+			sg.com.ctcdemo.fms.portlet.FMSComparisonChart
+		</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/fmscomparisonchart/view.jsp</value>
+		</init-param>
+		<init-param>
+			<name>edit-template</name>
+			<value>/html/fmscomparisonchart/edit.jsp</value>
+		</init-param>
+		<init-param>
+			<name>config-template</name>
+			<value>/html/fmscomparisonchart/config.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>edit</portlet-mode>
+			<portlet-mode>config</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>FMS Comparison Chart</title>
+			<short-title>Fms Comparison Chart</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	
 </portlet-app>

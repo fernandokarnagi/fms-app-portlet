@@ -28,7 +28,7 @@ YUI().use('aui-button', 'node', function(Y) {
 		     
 		      '<a href="/attendance">View Attendance Summary</a><br/>' +
 		      '<a href="/building-preventive-maintenance">View Preventive Maintenance Summary</a><br/>' +
-		      '<a href="#">View Corrective Maintenance Summary</a><br/>' +
+		      '<a href="/building-corrective-maintenance">View Corrective Maintenance Summary</a><br/>' +
 		      '</div>'+
 		      '</div>';
   
@@ -55,7 +55,7 @@ YUI().use('aui-button', 'node', function(Y) {
 		     
 		      '<a href="/attendance">View Attendance Summary</a><br/>' +
 		      '<a href="/building-preventive-maintenance">View Preventive Maintenance Summary</a><br/>' +
-		      '<a href="#">View Corrective Maintenance Summary</a><br/>' +
+		      '<a href="/building-corrective-maintenance">View Corrective Maintenance Summary</a><br/>' +
 		      '</div>'+
 		      '</div>';
 

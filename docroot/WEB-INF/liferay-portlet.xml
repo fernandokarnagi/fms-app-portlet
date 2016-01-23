@@ -168,6 +168,48 @@
 			fms-preventive-maintenance-search-portlet
 		</css-class-wrapper>
 	</portlet>
+	<portlet>
+		<portlet-name>fms-case-query</portlet-name>
+		<icon>/icon.png</icon>
+		<header-portlet-css>/css/case-query.css</header-portlet-css>
+		<footer-portlet-javascript>
+			/js/case-query.js
+		</footer-portlet-javascript>
+		<css-class-wrapper>fms-case-query-portlet</css-class-wrapper>
+	</portlet>
+	<portlet>
+		<portlet-name>fms-case-create</portlet-name>
+		<icon>/icon.png</icon>
+		<header-portlet-css>/css/case-create.css</header-portlet-css>
+		<footer-portlet-javascript>
+			/js/case-create.js
+		</footer-portlet-javascript>
+		<css-class-wrapper>fms-case-create-portlet</css-class-wrapper>
+	</portlet>
+	<portlet>
+		<portlet-name>fms-cm-chart</portlet-name>
+		<icon>/icon.png</icon>
+		<instanceable>true</instanceable>
+		<header-portlet-css>/css/cm-chart.css</header-portlet-css>
+		<footer-portlet-javascript>
+			/js/cm-chart.js
+		</footer-portlet-javascript>
+		<css-class-wrapper>fms-cm-chart-portlet</css-class-wrapper>
+	</portlet>
+	<portlet>
+		<portlet-name>fms-comparison-chart</portlet-name>
+		<icon>/icon.png</icon>
+		<instanceable>true</instanceable>
+		<header-portlet-css>
+			/css/comparison-chart.css
+		</header-portlet-css>
+		<footer-portlet-javascript>
+			/js/comparison-chart.js
+		</footer-portlet-javascript>
+		<css-class-wrapper>
+			fms-comparison-chart-portlet
+		</css-class-wrapper>
+	</portlet>
 	<role-mapper>
 		<role-name>administrator</role-name>
 		<role-link>Administrator</role-link>
