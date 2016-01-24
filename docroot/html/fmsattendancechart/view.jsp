@@ -2,7 +2,7 @@
 
 <portlet:defineObjects />
 <script src="<%=request.getContextPath()%>/js/Chart.min.js"></script>
-
+ 
 <form class="form-inline">
   <fieldset>
     <label>Building&nbsp;&nbsp;</label>

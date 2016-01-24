@@ -27,6 +27,7 @@ PortletPreferences preferences = renderRequest.getPreferences();
     <input type="date" placeholder="">
     <label>Property</label>
     <select>
+    	<option>Show All</option>
     	<option>One Marina Boulevard</option>
     	<option>One Raffles Quay</option>
     </select>
