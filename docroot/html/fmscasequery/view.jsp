@@ -48,7 +48,7 @@
       	<option>September</option>
       	<option>October</option>
       	<option>November</option>
-      	<option>December</option>
+      	<option>December</option>  
       </select>
     </label>
     
@@ -60,12 +60,13 @@
       	<option>2014</option>
       </select>
     </label>
-   
-  </fieldset>
-    <hr/>
     <button id="queryBtn" >Query</button>
-    <button id="createCaseBtn">Create Case</button>
+  </fieldset>
+   
   
 </form>
 
+ <button id="createCaseBtn">Create Case</button>
+    <button id="closeCaseBtn">Close Case (please select)</button>
+    <br/>  <br/>  
 <div id="queryTable" class="table table-bordered table-hover"></div>

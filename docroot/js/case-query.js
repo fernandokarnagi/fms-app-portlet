@@ -146,6 +146,12 @@ YUI().use('aui-button', 'node', function(Y) {
 		cssClass: 'btn btn-lg btn-primary'
 	}).render();
 	
+	var closeCaseBtn = new Y.Button({
+		label : 'Close Case (please select below)',
+		srcNode : '#closeCaseBtn',
+		cssClass: 'btn btn-lg btn-primary'
+	}).render();
+	
 	queryBtn.on("click", function() {
 		console.log("Query Button is clicked");
 	}, queryBtn);
@@ -154,5 +160,10 @@ YUI().use('aui-button', 'node', function(Y) {
 		console.log("Create case Button is clicked");
 		location.href='/create';
 	}, createCaseBtn);
+	
+	closeCaseBtn.on("click", function() {
+		console.log("close case Button is clicked");  
+		var res = confirm("Are you sure you want to close this case?");
+	}, closeCaseBtn);
 
 });

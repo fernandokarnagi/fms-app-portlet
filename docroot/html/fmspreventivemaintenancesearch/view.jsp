@@ -56,3 +56,7 @@
 
 
 <button id="fmsSearchBtn">Search</button>
+<hr/>
+<input type="file"></input>
+<button id="fmsUploadBtn">Upload Schedule</button>
+<button id="fmsDownloadBtn">Download Schedule</button>
