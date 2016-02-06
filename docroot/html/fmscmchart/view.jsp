@@ -21,12 +21,12 @@ PortletPreferences preferences = renderRequest.getPreferences();
   <fieldset>
   	<legend><%=preferences.getValue("chartTitle", "")%></legend>
     <label>From</label>
-    <input type="date" placeholder="">
+    <input type="date" placeholder="" style="width: 170px">
     
     <label>To</label>
-    <input type="date" placeholder="">
+    <input type="date" placeholder="" style="width: 170px">
     <label>Property</label>
-    <select>
+    <select style="width: 170px">
     	<option>Show All</option>
     	<option>One Marina Boulevard</option>
     	<option>One Raffles Quay</option>
@@ -44,7 +44,7 @@ AmCharts.makeChart( "<%=preferences.getValue("divName", "")%>", {
 	  "type": "gauge",
 	  "theme": "light",
 	  "axes": [ {
-	    "axisThickness": 5,
+	    "axisThickness": 1,
 	    "axisAlpha": 0.2,
 	    "tickAlpha": 10,
 	    "valueInterval": 20,
@@ -65,14 +65,14 @@ AmCharts.makeChart( "<%=preferences.getValue("divName", "")%>", {
 	      "startValue": 80
 	    } ],
 	    "bottomText": "78.5",
-	    "bottomTextFontSize": 40,
+	    "bottomTextFontSize": 10,
 	    "bottomTextYOffset": -20,
 	    "endValue": 100
 	  } ],
 	  "arrows": [ {
 		  "value": 78.5,
-		  "startWidth": 20,
-		  "innerRadius": "10%"
+		  "startWidth": 5,
+		  "innerRadius": "5%"
 		  
 	  } ],
 	  "export": {
