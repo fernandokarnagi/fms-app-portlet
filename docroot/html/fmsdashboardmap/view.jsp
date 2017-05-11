@@ -1,22 +1,38 @@
-<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
+<%@ include file="/html/init.jsp" %>
+<%
+	 String googleapikey = GetterUtil.getString(portletPreferences.getValue("googleapikey", "AIzaSyDdap-Je0fjCFOzHcvg1a232DQIbjdfn64"));
+	 String centerlat = GetterUtil.getString(portletPreferences.getValue("centerlat", "1.35"));
+	 String centerlng = GetterUtil.getString(portletPreferences.getValue("centerlng", "103.851959"));
+	 %>
+	         
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+					
+<div id='mapdiv' style='height:800px;'></div>
+<script>  
 
-<portlet:defineObjects />
-
-<style>
-      #map {
-        height: 500px;
-      }
-    </style>
-    
-<div id="map"></div>
-<script>
 var map;
+
 function initMap() {
-console.log("initmap");
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 1.35, lng: 103.851959},
-    zoom: 11
-  });
+
+	var center = L.bounds([1.56073, 104.11475], [1.16, 103.502]).getCenter();
+	map = L.map('mapdiv').setView([center.x, center.y], 12);
+
+	var basemap = L.tileLayer('https://maps-{s}.onemap.sg/v3/Default/{z}/{x}/{y}.png', {
+        detectRetina: true,
+					attribution: 'Map data &copy; contributors, <a href="http://SLA.gov.sg">Singapore Land Authority</a>',
+					maxZoom: 18,
+        minZoom: 11
+	});
+	
+	attribution = map.attributionControl;
+
+	attribution.setPrefix('<img src="http://docs.onemap.sg/maps/images/oneMap64-01.png" style="height:20px;width:20px;"/>');
+
+	map.setMaxBounds([[1.56073, 104.1147], [1.16, 103.502]]);
+
+	basemap.addTo(map);
 }
+
+initMap();
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCLbC2n20iSg2vaBeGiDIhhu6kjk3k9kc&callback=initMap" async defer></script>

@@ -1,21 +1,16 @@
 <%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
 
 <portlet:defineObjects />
-<script src="<%=request.getContextPath()%>/js/Chart.min.js"></script>
+<script src="<%=request.getContextPath()%>/js/Chart.new.js"></script>
+<script src="<%=request.getContextPath()%>/js/amcharts/amcharts.js" type="text/javascript"></script>
+<script src="<%=request.getContextPath()%>/js/amcharts/pie.js" type="text/javascript"></script>
+<script src="<%=request.getContextPath()%>/js/chart.js" type="text/javascript"></script>
 
 <form class="form-inline">
+	<fieldset>
+    <label>&nbsp;&nbsp;Building&nbsp;&nbsp; : </label>  One Marina Boulevard    
+  </fieldset>
   <fieldset>
-    <label>Building&nbsp;&nbsp;</label>
-    <label class="checkbox">
-      <input type="checkbox" checked>One Marina Boulevard
-    </label>
-     <label class="checkbox">
-      <input type="checkbox" checked>One Shenton Way
-    </label>
-     <label class="checkbox">
-      <input type="checkbox" checked>One Raffles Place
-    </label>
-   
     <label>&nbsp;&nbsp;Month</label>
     <label class="checkbox">
       <select>
@@ -51,13 +46,14 @@
 
 <hr/>
 
-<div id="fmsCompleted" class="fms-pie-chart"><b>On Schedule and Completed</b><canvas id="fmsCompletedChart" width="200px" height="200px"></canvas></div>
-<div id="fmsNotOnSchedule" class="fms-pie-chart"><b>Not On Schedule and Completed</b><canvas id="fmsNotOnScheduleChart" width="200px" height="200px"></canvas></div>
-<div id="fmsNotComplete" class="fms-pie-chart"><b>Not Completed</b><canvas id="fmsNotCompletedChart" width="200px" height="200px"></canvas></div>
-<div id="fmsTotal" class="fms-pie-chart"><b>Total</b><canvas id="fmsTotalChart" width="200px" height="200px"></canvas></div>
-
-<br class="fms-clearBoth" />
-<br class="fms-clearBoth" />
+<table>
+<tr>
+	<td><div id="fmsCompleted" style="width: 215px; height: 230px;"></div></td>
+	<td><div id="fmsNotOnSchedule" style="width: 215px; height: 230px;"></div></td>
+	<td><div id="fmsNotComplete" style="width: 215px; height: 230px;"></div></td>
+	<td><div id="fmsTotal" style="width: 215px; height: 230px;"></div></td>
+</tr>
+</table>
 
     <button class="btn icon-print">Print</button>
     <button class="btn icon-download">Export</button>

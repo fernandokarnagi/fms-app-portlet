@@ -210,6 +210,32 @@
 			fms-comparison-chart-portlet
 		</css-class-wrapper>
 	</portlet>
+	<portlet>
+		<portlet-name>fms-print-friendly</portlet-name>
+		<icon>/icon.png</icon>
+		<header-portlet-css>
+			/css/print-friendly-main.css
+		</header-portlet-css>
+		<footer-portlet-javascript>
+			/js/print-friendly-main.js
+		</footer-portlet-javascript>
+		<css-class-wrapper>
+			fms-print-friendly-portlet
+		</css-class-wrapper>
+	</portlet>
+	<portlet>
+		<portlet-name>fms-cleaning-assessment</portlet-name>
+		<icon>/icon.png</icon>
+		<header-portlet-css>
+			/css/cleaning-assessment.css
+		</header-portlet-css>
+		<footer-portlet-javascript>
+			/js/cleaning-assessment.js
+		</footer-portlet-javascript>
+		<css-class-wrapper>
+			fms-cleaning-assessment-portlet
+		</css-class-wrapper>
+	</portlet>
 	<role-mapper>
 		<role-name>administrator</role-name>
 		<role-link>Administrator</role-link>

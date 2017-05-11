@@ -80,8 +80,8 @@
 			<portlet-mode>view</portlet-mode>
 		</supports>
 		<portlet-info>
-			<title>FMS Dashboard Map</title>
-			<short-title>FMS Dashboard Map</short-title>
+			<title>Resources locator map</title>
+			<short-title>Resources locator map</short-title>
 			<keywords></keywords>
 		</portlet-info>
 		<security-role-ref>
@@ -146,8 +146,8 @@
 			<portlet-mode>view</portlet-mode>
 		</supports>
 		<portlet-info>
-			<title>FMS Dashboard Technician Search</title>
-			<short-title>Fms Dashboard Technician Search</short-title>
+			<title>Resources Tracking</title>
+			<short-title>Resources Tracking</short-title>
 			<keywords></keywords>
 		</portlet-info>
 		<security-role-ref>
@@ -206,10 +206,20 @@
 			<name>view-template</name>
 			<value>/html/fmsbuildingpmchart/view.jsp</value>
 		</init-param>
+		<init-param>
+			<name>preview-template</name>
+			<value>/html/fmsbuildingpmchart/preview.jsp</value>
+		</init-param>
+		<init-param>
+			<name>print-template</name>
+			<value>/html/fmsbuildingpmchart/print.jsp</value>
+		</init-param>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
 			<portlet-mode>view</portlet-mode>
+			<portlet-mode>preview</portlet-mode>
+			<portlet-mode>print</portlet-mode>
 		</supports>
 		<portlet-info>
 			<title>FMS Building Pm Chart</title>
@@ -406,10 +416,15 @@
 				/html/fmscleaningperformancedashboard/view.jsp
 			</value>
 		</init-param>
+		<init-param>
+			<name>print-template</name>
+			<value>/html/fmscleaningperformancedashboard/view.jsp</value>
+		</init-param>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
 			<portlet-mode>view</portlet-mode>
+			<portlet-mode>print</portlet-mode>
 		</supports>
 		<portlet-info>
 			<title>FMS Cleaning Performance Dashboard</title>
@@ -617,4 +632,100 @@
 		</security-role-ref>
 	</portlet>
 	
+	<portlet>
+		<portlet-name>fms-print-friendly</portlet-name>
+		<display-name>Fms Print Friendly</display-name>
+		<portlet-class>
+			sg.com.ctcdemo.fms.portlet.FMSPrintFriendly
+		</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/fmsprintfriendly/view.jsp</value>
+		</init-param>
+		<init-param>
+			<name>about-template</name>
+			<value>/html/fmsprintfriendly/about.jsp</value>
+		</init-param>
+		<init-param>
+			<name>config-template</name>
+			<value>/html/fmsprintfriendly/config.jsp</value>
+		</init-param>
+		<init-param>
+			<name>edit-defaults-template</name>
+			<value>/html/fmsprintfriendly/edit-defaults.jsp</value>
+		</init-param>
+		<init-param>
+			<name>preview-template</name>
+			<value>/html/fmsprintfriendly/preview.jsp</value>
+		</init-param>
+		<init-param>
+			<name>print-template</name>
+			<value>/html/fmsprintfriendly/print.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>about</portlet-mode>
+			<portlet-mode>config</portlet-mode>
+			<portlet-mode>edit_defaults</portlet-mode>
+			<portlet-mode>preview</portlet-mode>
+			<portlet-mode>print</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Fms Print Friendly</title>
+			<short-title>Fms Print Friendly</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	<portlet>
+		<portlet-name>fms-cleaning-assessment</portlet-name>
+		<display-name>Fms Cleaning Assessment</display-name>
+		<portlet-class>
+			sg.com.ctcdemo.fms.portlet.FMSCleaningAssessment
+		</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/fmscleaningassessment/view.jsp</value>
+		</init-param>
+		<init-param>
+			<name>print-template</name>
+			<value>/html/fmscleaningassessment/view.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>print</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Fms Cleaning Assessment</title>
+			<short-title>Fms Cleaning Assessment</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
 </portlet-app>

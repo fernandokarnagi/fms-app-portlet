@@ -4,17 +4,10 @@
 <script src="<%=request.getContextPath()%>/js/Chart.min.js"></script>
 
 <form class="form-inline">
-  <fieldset>
-    <label>Building&nbsp;&nbsp;</label>
-    <label class="checkbox">
-      <input type="checkbox" checked>One Marina Boulevard
-    </label>
-     <label class="checkbox">
-      <input type="checkbox" checked>One Shenton Way
-    </label>
-     <label class="checkbox">
-      <input type="checkbox" checked>One Raffles Place
-    </label>
+<fieldset>
+    <label>&nbsp;&nbsp;Building&nbsp;&nbsp; : </label>  One Marina Boulevard    
+  </fieldset>
+  <fieldset> 
    
     <label>&nbsp;&nbsp;Month</label>
     <label class="checkbox">

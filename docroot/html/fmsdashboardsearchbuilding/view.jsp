@@ -5,37 +5,25 @@
 <form>
   <fieldset>
     <legend>Building</legend>
-    <label>Name</label>
     <input type="text" placeholder="building name ">
     <span class="help-block">Please provide building name to search</span>
     
-    <label>Type</label>
-    <label class="checkbox">
-      <input type="checkbox" id="fmsBuilding"> Building
-    </label>
-    <label class="checkbox">
-      <input type="checkbox" id="fmsSupermarket"> Supermarket
-    </label>
-    <span class="help-block">Please provide building owner to search</span>
-    
-    <legend>Location</legend>
-    <label>Area</label>
-    <label class="checkbox">
-      <input type="checkbox">North Singapore
-    </label>
-     <label class="checkbox">
-      <input type="checkbox">South Singapore
-    </label>
-     <label class="checkbox">
-      <input type="checkbox">Central Singapore
-    </label>
-     <label class="checkbox">
-      <input type="checkbox">West Singapore
-    </label>
-     <label class="checkbox">
-      <input type="checkbox">East Singapore
-    </label>
-    
+	 <span class="help-block">Please choose the Cluster</span>
+	<legend>Cluster</legend>
+   	<select>
+   		<option>Benoi</option>
+   		<option>Cheers</option>  
+   		<option>FairPrice</option>
+   	</select>
+	
+	 <span class="help-block">Please choose the group</span>
+    <legend>Group</legend>
+   	<select>
+   		<option>Zone1</option>
+   		<option>Zone2</option>
+   		<option>Zone3</option>     
+   	</select>
+   
     
   </fieldset>
 </form>

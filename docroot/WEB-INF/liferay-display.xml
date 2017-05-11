@@ -21,6 +21,8 @@
 		<portlet id="fms-case-create"></portlet>
 		<portlet id="fms-cm-chart"></portlet>
 		<portlet id="fms-comparison-chart"></portlet>
+		<portlet id="fms-print-friendly"></portlet>
+		<portlet id="fms-cleaning-assessment"></portlet>
 	</category>
 	<category name="category.sample">
 		

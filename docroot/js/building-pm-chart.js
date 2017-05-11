@@ -138,108 +138,88 @@ YUI()
 						data : data
 					}).render('#pmTable');
 				});
+	
+var notCompletedData = [
+     {
+         "type": "Not Completed",
+         "value": 9,
+         "color": "#ff0000"
+     },
+     {  
+         "type": "Others",
+         "value": 95,
+         "color": "#dddddd"
+     }
+ ];
 
-var notCompletedData  = [
+var notOnScheduleData = [
     {
-        value: 5,
-        color:"#ff0000",
-        highlight: "#dd0000",
-        label: "Not Completed"
+        "type": "Not On Schedule",
+        "value": 15,
+        "color": "#ff9900"
     },
-    {
-        value: 95,
-        color: "#dddddd",
-        highlight: "#aaaaaa",
-        label: "Others"
+    {  
+        "type": "Others",
+        "value": 85,
+        "color": "#dddddd"
     }
-]
+];
 
-var notOnScheduleData  = [
-    {
-        value: 15,
-        color:"#ff9900",
-        highlight: "#dddd00",
-        label: "Not On Schedule"
-    },
-    {
-        value: 85,
-        color: "#dddddd",
-        highlight: "#aaaaaa",
-        label: "Others"
-    }
-]
+var completedData = [
+     {
+         "type": "Completed",
+         "value": 80,
+         "color": "#00ff00"
+     },
+     {  
+         "type": "Others",
+         "value": 20,
+         "color": "#dddddd"
+     }
+ ];
 
-var completedData  = [
-    {
-        value: 80,
-        color:"#00ff00",
-        highlight: "#00dd00",
-        label: "Completed"
-    },
-    {
-        value: 20,
-        color: "#dddddd",
-        highlight: "#aaaaaa",
-        label: "Others"
-    }
-]
+var totalData = [
+     {
+         "type": "Not Completed",
+         "value": 5,
+         "color": "#ff0000"
+     },
+     {  
+         "type": "Not On Schedule &\nCompleted",
+         "value": 15,
+         "color": "#ff9900"
+     },
+     {  
+         "type": "On Schedule &\nCompleted",
+         "value": 80,
+         "color": "#00ff00"
+     }
+ ];
 
-var totalData  = [
-{
-    value: 5,
-    color:"#ff0000",
-    highlight: "#dd0000",
-    label: "Not Completed"
-},{
-    value: 15,
-    color:"#ff9900", 
-    highlight: "#dddd00",
-    label: "Not On Schedule & Completed" 
-},{
-    value: 80,
-    color:"#00ff00",
-    highlight: "#00dd00",
-    label: "On Schedule & Completed"
-}
-]
+drawPieChart("fmsCompleted", ["Completed"], completedData, function(event) {
+	var label = event.dataItem.title;
+	var value = event.dataItem.value;
+	var percents = event.dataItem.percents;
+    console.log("label: " + label + ", value: " + value + ", percents: " + percents);
+});
 
-var options = 
-{
-    //Boolean - Whether we should show a stroke on each segment
-    segmentShowStroke : true,
+drawPieChart("fmsNotOnSchedule", ["Not on Schedule"], notOnScheduleData, function(event) {
+	var label = event.dataItem.title;
+	var value = event.dataItem.value;
+	var percents = event.dataItem.percents;
+    console.log("label: " + label + ", value: " + value + ", percents: " + percents);
+});
 
-    //String - The colour of each segment stroke
-    segmentStrokeColor : "#fff",
+drawPieChart("fmsNotComplete", ["Not Completed"], notCompletedData, function(event) {
+	var label = event.dataItem.title;
+	var value = event.dataItem.value;
+	var percents = event.dataItem.percents;
+    console.log("label: " + label + ", value: " + value + ", percents: " + percents);
+});
 
-    //Number - The width of each segment stroke
-    segmentStrokeWidth : 2,
-
-    //Number - The percentage of the chart that we cut out of the middle
-    percentageInnerCutout : 50, // This is 0 for Pie charts
-
-    //Number - Amount of animation steps
-    animationSteps : 100,
-
-    //String - Animation easing effect
-    animationEasing : "easeOutBounce",
-
-    //Boolean - Whether we animate the rotation of the Doughnut
-    animateRotate : true,
-
-    //Boolean - Whether we animate scaling the Doughnut from the centre
-    animateScale : true,
-
-    
-}
-
-var notCompletedCtx = document.getElementById("fmsNotCompletedChart").getContext("2d");
-new Chart(notCompletedCtx).Pie(notCompletedData,options);
-
-var notOnScheduleCtx = document.getElementById("fmsNotOnScheduleChart").getContext("2d");
-new Chart(notOnScheduleCtx).Pie(notOnScheduleData,options);
-
-var completedCtx = document.getElementById("fmsCompletedChart").getContext("2d");
-new Chart(completedCtx).Pie(completedData,options);
-
-var totalCtx = document.getElementById("fmsTotalChart").getContext("2d");
-new Chart(totalCtx).Pie(totalData,options);
+drawPieChart("fmsTotal", ["Total"], totalData, function(event) {
+	var label = event.dataItem.title;
+	var value = event.dataItem.value;
+	var percents = event.dataItem.percents;
+    console.log("label: " + label + ", value: " + value + ", percents: " + percents);
+});
